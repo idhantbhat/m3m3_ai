@@ -122,5 +122,3 @@ def generate(jwt_token):
     else:
         return jsonify({"error": "Failed to generate image"}), 500
 
-if __name__ == "__main__":
-    app.run(debug=True)
