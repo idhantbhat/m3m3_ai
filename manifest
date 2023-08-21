@@ -1,0 +1,14 @@
+create an api with three templates,the api should take in apikey,
+body, text, filename, and template number. it should output
+the image url via google storage? and it shoudl give the time created,
+and the api credits left.
+
+create a flask app with a login/signup page and aso have it display the apikey
+
+template 1 = 422x422
+template 2 = 440x440
+template 3 = 880x880
+
+render.com
+deta .sh?
+pythonanywhere.com

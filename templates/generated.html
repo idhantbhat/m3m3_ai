@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: tomato;
+            --fg-100: hsl(220, 20%, 98%);
+            --fg-200: hsl(220, 20%, 80%);
+            --bg-100: hsl(220, 20%, 14%);
+        }
+
+        html, body, #app {
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Roboto Mono', monospace;
+            color: var(--fg-100);
+            background-color: var(--bg-100);
+        }
+
+        button {
+            font: inherit;
+            color: inherit;
+            background: none;
+            border: none;
+            opacity: 0.4;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            cursor: pointer;
+            opacity: 1;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .generated-image {
+            width: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            max-height: 500px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <img src="{{ image_url }}" alt="Generated Image" class="generated-image">
+    <br>
+    <a href="{{ url_for('home') }}">Go back to Home</a>
+</div>
+</body>
+</html>
