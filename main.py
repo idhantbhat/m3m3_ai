@@ -111,7 +111,7 @@ def generate(jwt_token):
         overlay_image_pathAPI = os.path.join('PictureTemplates', f'{num}.jpg')
         with open(overlay_image_pathAPI, 'wb') as img_file:
             img_file.write(image_response.content)
-        overlay_image_path = rf'C:\Users\amogus\PycharmProjects\pythonProject9\PictureTemplates\{num}.jpg'
+        overlay_image_path = rf'PictureTemplates\{num}.jpg'
         template_path = os.path.join('PictureTemplates', f'template{template_number}.jpg')
         output_path = os.path.join('static', f'{num}.jpg')
         overlay_text_on_template(template_path, output_path, text, overlay_image_path,
